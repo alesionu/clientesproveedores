@@ -1,0 +1,10 @@
+<Files "*.pdf">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Proteger contra ejecución de scripts
+<FilesMatch "\.(php|php3|php4|php5|phtml)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

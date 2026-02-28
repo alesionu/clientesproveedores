@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="base-url" content="<?= base_url() ?>">
     <title><?php echo isset($titulo) ? $titulo : 'Clientes y Proveedores'; ?></title>
+
+
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -46,7 +49,6 @@
 </head>
 
 
-</head>
 
 <body class="hold-transition sidebar-mini layout-fixed dark-mode">
 
@@ -192,9 +194,7 @@
             </div>
         </aside>
 
-        <!-- Content Wrapper -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
@@ -212,7 +212,6 @@
                     </div>
                 </div>
             </div>
-            <!-- /.content-header -->
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">

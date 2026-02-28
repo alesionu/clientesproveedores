@@ -16,11 +16,14 @@
                 <table class="table table-hover text-nowrap" id="id_data_table">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Razón Social</th>
-                            <th>CUIT</th>
+                            <th>CUIT / DNI</th>
+                            <th>Cátegoria</th>
                             <th>Teléfono</th>
                             <th>Email</th>
+                            <th>Provincia</th>
+                            <th>Ciudad</th>
+                            <th>CP</th>
                             <th>Dirección</th>
                             <th>Saldo</th>
                             <th class="no-export">Acciones</th>
@@ -29,17 +32,19 @@
                     <tbody>
                         <?php foreach($proveedores as $proveedor): ?>
                         <?php 
-                            // Obtener el saldo del proveedor
                             $saldo = isset($saldos[$proveedor['id']]) ? $saldos[$proveedor['id']] : 0;
                         ?>
                         <tr>
-                            <td><?= $proveedor['id'] ?></td>
                             <td>
                                 <strong><?= $proveedor['razon_social'] ?></strong>
                             </td>
                             <td><?= $proveedor['cuit'] ?></td>
+                            <td><?= $proveedor['categoria']?></td>
                             <td><?= $proveedor['telefono'] ?></td>
                             <td><?= $proveedor['email'] ?></td>
+                            <td><?= $proveedor['provincia'] ?></td>
+                            <td><?= $proveedor['ciudad'] ?></td>
+                            <td><?= $proveedor['codigo_postal'] ?></td>
                             <td><?= $proveedor['direccion'] ?></td>
 
                             <td>
@@ -83,7 +88,9 @@
                 </table>
             </div>
             
-<!-- Modal de Información de Saldos -->
+<!--modal de informacion de saldos 
+
+-->
 <div class="modal fade" id="modalInfoSaldosProveedores" tabindex="-1" role="dialog" aria-labelledby="modalInfoSaldosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">

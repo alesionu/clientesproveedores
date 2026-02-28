@@ -13,7 +13,7 @@ class TransaccionesDetalleModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['transaccion_id','producto_id','cantidad','precio_unitario','subtotal','fecha_alta'
+    protected $allowedFields = ['transaccion_id','producto_id','cantidad','precio_unitario','subtotal','fecha_alta', 'descripcion_libre'
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -64,4 +64,18 @@ class TransaccionesDetalleModel extends Model
     {
         return $this->where('transaccion_id', $transaccion_id)->delete();
     }
+
+    // Obtener detalle completo con información de productos
+    public function getDetalleConProductos($transaccion_id)
+    {
+        return $this->select('
+            transacciones_detalle.*,
+            productos.nombre as producto_nombre,
+            productos.codigo
+        ')
+        ->join('productos', 'productos.id = transacciones_detalle.producto_id', 'left')
+        ->where('transacciones_detalle.transaccion_id', $transaccion_id)
+        ->findAll();
+    }
+
 }

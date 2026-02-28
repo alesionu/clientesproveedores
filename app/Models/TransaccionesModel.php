@@ -14,13 +14,15 @@ class TransaccionesModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['cliente_id','proveedor_id','tipo_comprobante', 'numero_comprobante', 'fecha', 'monto', 'observaciones', 'fecha_alta', 'fecha_edicion', 'fecha_borrado'];
+    protected $allowedFields = ['cliente_id','proveedor_id','tipo_comprobante', 
+    'numero_comprobante', 'fecha', 'monto', 'observaciones', 'fecha_alta', 
+    'fecha_edicion', 'fecha_borrado', 'forma_pago', 'pagado', 'id_usuario', 'archivo_pdf'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
 
     
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'fecha_alta';
     protected $updatedField  = 'fecha_edicion';
@@ -51,11 +53,13 @@ class TransaccionesModel extends Model
         return $this->select('
                 transacciones.*,
                 clientes.razon_social as nombre_cliente,
-                proveedores.razon_social as nombre_proveedor
+                proveedores.razon_social as nombre_proveedor,
+                COALESCE(clientes.cuit, proveedores.cuit) as cuit
             ')
             ->join('clientes', 'clientes.id = transacciones.cliente_id', 'left')
             ->join('proveedores', 'proveedores.id = transacciones.proveedor_id', 'left')
             ->orderBy('transacciones.fecha', 'DESC')
+            ->orderBy('transacciones.id', 'DESC') // Agregado para ordenar por ID también
             ->findAll();
     }
 
@@ -149,6 +153,7 @@ class TransaccionesModel extends Model
             ->orderBy('transacciones.fecha', 'ASC')
             ->orderBy('transacciones.id', 'ASC')
             ->findAll();
+            //asc para que queden en ascendente
     }
 
     
@@ -168,7 +173,7 @@ class TransaccionesModel extends Model
     public function getTotalesCaja()
 {
     $ingresos = $this->db->table('transacciones')
-        ->selectSum('monto', 'total')
+        ->selectSum('monto', 'total')//suma todos los campos de la columna monto y se le asigna el alias total
         ->where('tipo_comprobante', 'pago')
         ->where('cliente_id IS NOT NULL')
         ->get()
@@ -189,5 +194,19 @@ class TransaccionesModel extends Model
         'saldo'    => $ingresos - $egresos
     ];
 }
+
+public function getPendientes($tipo_entidad, $id_entidad)
+{
+    $columna = ($tipo_entidad == 'cliente') ? 'cliente_id' : 'proveedor_id';
+
+    return $this->select('id, tipo_comprobante, numero_comprobante, fecha, monto, observaciones')
+                ->where($columna, $id_entidad)
+                ->where('fecha_borrado IS NULL')
+                ->where('pagado', 0)
+                ->whereIn('tipo_comprobante', ['factura', 'nota_debito'])
+                ->orderBy('fecha', 'ASC')
+                ->findAll();
+}
+
 }
 

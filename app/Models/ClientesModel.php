@@ -14,7 +14,8 @@ class ClientesModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['razon_social', 'cuit', 'telefono', 'email', 'direccion', 'fecha_alta', 'fecha_edicion', 'fecha_borrado'];
+    protected $allowedFields = ['razon_social', 'cuit', 'telefono', 'email', 'direccion', 
+    'fecha_alta', 'fecha_edicion', 'fecha_borrado', 'provincia', 'ciudad', 'codigo_postal'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

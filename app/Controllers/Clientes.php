@@ -25,7 +25,6 @@ class Clientes extends BaseController
         
         $datos = $this->clientes->findAll();
         
-        // Obtener saldos de todos los proveedores
         $transaccionesModel = new TransaccionesModel();
         $saldos = $transaccionesModel->getSaldosClientes();
 
@@ -69,6 +68,9 @@ class Clientes extends BaseController
             'telefono'     => $this->request->getPost('telefono'),
             'email'        => $this->request->getPost('email'),
             'direccion'    => $this->request->getPost('direccion'),
+            'provincia'    => $this->request->getPost('provincia'),
+            'ciudad'       => $this->request->getPost('ciudad'),
+            'codigo_postal'=> $this->request->getPost('codigo_postal')
         ]);
 
         return redirect()->to(base_url('public/clientes/'));
@@ -105,6 +107,9 @@ class Clientes extends BaseController
             'telefono'     => $this->request->getPost('telefono'),
             'email'        => $this->request->getPost('email'),
             'direccion'    => $this->request->getPost('direccion'),
+            'provincia'    => $this->request->getPost('provincia'),
+            'ciudad'       => $this->request->getPost('ciudad'),
+            'codigo_postal'=> $this->request->getPost('codigo_postal')
         ];
 
         $this->clientes->update($id, $data);

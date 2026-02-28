@@ -1,0 +1,220 @@
+DEBUG - 2025-12-23 10:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 10:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 11:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 11:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 11:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 12:54:11 --> === GUARDAR NOTA PEDIDO ===
+DEBUG - 2025-12-23 12:54:11 --> Proveedor ID: 9
+DEBUG - 2025-12-23 12:54:11 --> Productos JSON: [{"id":0,"producto_id":"4","codigo":"PROD-003","nombre":"Teclado Mecánico","cantidad":1,"precio_unitario":45000,"subtotal":45000}]
+DEBUG - 2025-12-23 12:54:11 --> Fecha: 2025-12-23
+DEBUG - 2025-12-23 12:54:11 --> Total calculado: 45000
+DEBUG - 2025-12-23 12:54:11 --> Datos transacción: {"proveedor_id":"9","tipo_comprobante":"nota_pedido","numero_comprobante":"NP-0001","fecha":"2025-12-23","monto":45000,"observaciones":"","id_usuario":"5","pagado":0}
+ERROR - 2025-12-23 12:54:11 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\clientesProveedores\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\clientesProveedores\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(278): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#9 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#10 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-23 12:54:11 --> Error insertando transacción: []
+DEBUG - 2025-12-23 13:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:00:03 --> === GUARDAR NOTA PEDIDO ===
+DEBUG - 2025-12-23 13:00:03 --> Proveedor ID: 9
+DEBUG - 2025-12-23 13:00:03 --> Productos JSON: [{"id":0,"producto_id":"4","codigo":"PROD-003","nombre":"Teclado Mecánico","cantidad":1,"precio_unitario":45000,"subtotal":45000},{"id":2,"producto_id":"8","codigo":1234,"nombre":"Arreglos","cantidad":1,"precio_unitario":20000,"subtotal":20000}]
+DEBUG - 2025-12-23 13:00:03 --> Fecha: 2025-12-23
+DEBUG - 2025-12-23 13:00:03 --> Total calculado: 65000
+DEBUG - 2025-12-23 13:00:03 --> Datos transacción: {"proveedor_id":"9","tipo_comprobante":"nota_pedido","numero_comprobante":"NP-0001","fecha":"2025-12-23","monto":65000,"observaciones":"","id_usuario":"5","pagado":0}
+ERROR - 2025-12-23 13:00:03 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\clientesProveedores\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\clientesProveedores\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(278): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#9 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#10 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-23 13:00:03 --> Error insertando transacción: []
+DEBUG - 2025-12-23 13:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:04:20 --> === GUARDAR NOTA PEDIDO ===
+DEBUG - 2025-12-23 13:04:20 --> Proveedor ID: 9
+DEBUG - 2025-12-23 13:04:20 --> Productos JSON: [{"id":0,"producto_id":"10","codigo":"PROD-001236","nombre":"lapiz","cantidad":1,"precio_unitario":1000,"subtotal":1000}]
+DEBUG - 2025-12-23 13:04:20 --> Fecha: 2025-12-23
+DEBUG - 2025-12-23 13:04:20 --> Total calculado: 1000
+DEBUG - 2025-12-23 13:04:20 --> Datos transacción: {"proveedor_id":"9","tipo_comprobante":"nota_pedido","numero_comprobante":"NP-0001","fecha":"2025-12-23","monto":1000,"observaciones":"","id_usuario":"5","pagado":0}
+ERROR - 2025-12-23 13:04:20 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\clientesProveedores\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\clientesProveedores\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(278): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#9 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#10 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-23 13:04:20 --> Error insertando transacción: []
+DEBUG - 2025-12-23 13:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:07:50 --> === GUARDAR NOTA PEDIDO ===
+DEBUG - 2025-12-23 13:07:50 --> Proveedor ID: 9
+ERROR - 2025-12-23 13:07:50 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\clientesProveedores\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\clientesProveedores\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(271): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#9 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#10 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-12-23 13:07:50 --> ERROR SQL: {"code":0,"message":""}
+ERROR - 2025-12-23 13:07:50 --> ERROR VALIDACION: []
+DEBUG - 2025-12-23 13:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-12-23 13:12:51 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(271): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#6 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#7 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-12-23 13:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-12-23 13:16:04 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(271): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#6 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#7 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-12-23 13:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-12-23 13:17:17 --> mysqli_sql_exception: Unknown column 'id_usuario' in 'field list' in C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\clientesProveedores\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\clientesProveedores\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\clientesProveedores\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\clientesProveedores\app\Controllers\Proveedores.php(271): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(933): App\Controllers\Proveedores->guardarNotaPedido()
+#6 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+#7 C:\xampp\htdocs\clientesProveedores\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\clientesProveedores\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\clientesProveedores\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\clientesProveedores\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+DEBUG - 2025-12-23 13:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-12-23 13:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-12-23 13:19:08 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\proveedores\ver_nota_pedido.php on line 245.
+ 1 APPPATH\Views\proveedores\ver_nota_pedido.php(245): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\clientesProveedores\\app\\Views\\proveedores\\ver_nota_pedido.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('proveedores/ver_nota_pedido', [], true)
+ 5 APPPATH\Controllers\Proveedores.php(356): view('proveedores/ver_nota_pedido', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedores->verNotaPedido('58')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-12-23 13:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-12-23 13:20:00 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\proveedores\ver_nota_pedido.php on line 245.
+ 1 APPPATH\Views\proveedores\ver_nota_pedido.php(245): htmlspecialchars(null)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\clientesProveedores\\app\\Views\\proveedores\\ver_nota_pedido.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('proveedores/ver_nota_pedido', [], true)
+ 5 APPPATH\Controllers\Proveedores.php(356): view('proveedores/ver_nota_pedido', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Proveedores->verNotaPedido('58')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

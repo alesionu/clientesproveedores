@@ -16,11 +16,13 @@
                 <table class="table table-hover text-nowrap" id="id_data_table">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Razón Social</th>
-                            <th>CUIT</th>
+                            <th>CUIT / DNI</th>
                             <th>Teléfono</th>
                             <th>Email</th>
+                            <th>Provincia</th>
+                            <th>Ciudad</th>
+                            <th>CP</th>
                             <th>Dirección</th>
                             <th>Saldo</th>
                             <th>Acciones</th>
@@ -29,17 +31,18 @@
                     <tbody>
                         <?php foreach($clientes as $cliente): ?>
                         <?php 
-                            // Obtener el saldo del cliente
                             $saldo = isset($saldos[$cliente['id']]) ? $saldos[$cliente['id']] : 0;
                         ?>
                         <tr>
-                            <td><?= $cliente['id'] ?></td>
                             <td>
                                 <strong><?= $cliente['razon_social'] ?></strong>
                             </td>
                             <td><?= $cliente['cuit'] ?></td>
                             <td><?= $cliente['telefono'] ?></td>
                             <td><?= $cliente['email'] ?></td>
+                            <td><?= $cliente['provincia'] ?></td>
+                            <td><?= $cliente['ciudad'] ?></td> 
+                            <td><?= $cliente['codigo_postal'] ?></td>
                             <td><?= $cliente['direccion'] ?></td>
                             <td>
                                 <?php if ($saldo > 0): ?>
@@ -83,7 +86,6 @@
     </div>
 </div>
 
-<!-- Modal de Información de Saldos -->
 <div class="modal fade" id="modalInfoSaldos" tabindex="-1" role="dialog" aria-labelledby="modalInfoSaldosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">

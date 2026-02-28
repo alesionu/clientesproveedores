@@ -73,16 +73,15 @@ class Usuarios extends BaseController
             return $this->response->setJSON(['success' => false, 'msg' => 'No tienes permiso.']);
         }
 
-        try {
+        
             if($this->usuarios->find($id)) {
                 $this->usuarios->delete($id);
                 return $this->response->setJSON(['success' => true, 'msg' => 'Usuario eliminado correctamente.']);
             } else {
                 return $this->response->setJSON(['success' => false, 'msg' => 'El usuario no existe.']);
             }
-        } catch (\Exception $e) {
             return $this->response->setJSON(['success' => false, 'msg' => 'Error en el servidor: ' . $e->getMessage()]);
-        }
+        
     }
     public function editar($id)
     {

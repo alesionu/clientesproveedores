@@ -1,5 +1,4 @@
 <div class="row">
-    <!-- Información del Cliente -->
     <div class="col-md-12">
         <div class="card card-primary mt-2">
             <div class="card-header">
@@ -28,6 +27,18 @@
                         <?= $cliente['telefono'] ?>
                     </div>
                     <div class="col-md-3">
+                        <strong><i class="fas fa-phone"></i> Provincia:</strong><br>
+                        <?= $cliente['provincia'] ?>
+                    </div>
+                    <div class="col-md-3">
+                        <strong><i class="fas fa-phone"></i> Ciudad:</strong><br>
+                        <?= $cliente['ciudad'] ?>
+                    </div>
+                    <div class="col-md-3">
+                        <strong><i class="fas fa-phone"></i> CP:</strong><br>
+                        <?= $cliente['codigo_postal'] ?>
+                    </div>
+                    <div class="col-md-3">
                         <strong><i class="fas fa-map-marker-alt"></i> Dirección:</strong><br>
                         <?= $cliente['direccion'] ?>
                     </div>
@@ -36,7 +47,6 @@
         </div>
     </div>
 
-    <!-- Resumen del Saldo -->
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-4">
@@ -65,7 +75,6 @@
         </div>
     </div>
 
-    <!-- Historial de Transacciones (Cuenta Corriente) -->
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
@@ -79,6 +88,7 @@
                         <tr>
                             <th>Fecha</th>
                             <th>Tipo</th>
+                            <th style="width: 50px;">Ver</th>
                             <th>N° Comprobante</th>
                             <th>Observaciones</th>
                             <th class="text-right">Debe</th>
@@ -114,6 +124,12 @@
                                 <?php else: ?>
                                 <span class="badge badge-info">N. Débito</span>
                                 <?php endif; ?>
+                            </td>
+                            <td class="text-center">
+                                <a href="<?= base_url('public/transacciones/ver_detalle/' . $t['id']) ?>"
+                                    class="btn btn-primary btn-sm" title="Ver Detalle del Comprobante">
+                                    <i class="fas fa-eye"></i>
+                                </a>
                             </td>
                             <td>
                                 <code><?= $t['numero_comprobante'] ?></code>

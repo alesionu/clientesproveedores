@@ -20,8 +20,15 @@
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="password">Teléfono</label>
-                <input class="form-control" type="number" name="telefono" id="password" 
+                <label class="form-label" for="usuario">Cátegoria</label>
+                <input class="form-control" type="text" name="categoria" id="usuario" 
+                       placeholder="Ej: Bebidas"  
+                       value="<?php echo $proveedor['categoria']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="">Teléfono</label>
+                <input class="form-control" type="number" name="telefono" id="" 
                        placeholder="ejem: 5491112345678 (sin espacios ni guiones)"
                         value="<?php echo $proveedor['telefono']; ?>" required>
             </div>
@@ -31,6 +38,27 @@
                 <input class="form-control" type="text" name="email" id="password" 
                        placeholder="ejem: cliente@gmail.com"
                     value="<?php echo $proveedor['email']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Provincia</label>
+                <input class="form-control" type="text" name="provincia" id="password" 
+                       placeholder="ejem: Ezpeleta 1234, CABA"
+                    value="<?php echo $proveedor['provincia']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Ciudad</label>
+                <input class="form-control" type="text" name="ciudad" id="password" 
+                       placeholder="ejem: Ezpeleta 1234, CABA"
+                    value="<?php echo $proveedor['ciudad']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Código Postal</label>
+                <input class="form-control" type="text" name="codigo_postal" id="password" 
+                       placeholder="ejem: Ezpeleta 1234, CABA"
+                    value="<?php echo $proveedor['codigo_postal']; ?>" required>
             </div>
 
             <div class="form-group">

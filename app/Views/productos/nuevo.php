@@ -18,21 +18,9 @@
             <form action="<?= base_url('public/productos/guardar') ?>" method="post">
                 <div class="card-body">
                     
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Código <span class="text-danger">*</span></label>
-                                <input type="text" 
-                                       class="form-control" 
-                                       name="codigo" 
-                                       placeholder="Ej: PROD-001" 
-                                       value="<?= old('codigo') ?>"
-                                       required>
-                                <small class="text-muted">Debe ser único</small>
-                            </div>
-                        </div>
 
-                        <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label>Nombre <span class="text-danger">*</span></label>
                                 <input type="text" 
@@ -57,10 +45,8 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label>Precio ($) <span class="text-danger">*</span></label>
                                 <input type="number" 
@@ -73,8 +59,10 @@
                                        required>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label>Descripción</label>
                                 <textarea class="form-control" 

@@ -1,9 +1,9 @@
+<link rel="stylesheet" href="<?php echo base_url(); ?>/public/asset/dist/css/panelestilo.css">
+
 <div class="container-fluid">
 
-    <!-- Fila 3: Entidades y Estado de Cuentas -->
     <div class="row">
 
-        <!-- Tarjetas de Entidades -->
         <div class="col-xl-4 col-lg-6 mb-4">
             <div class="card shadow h-100">
                 <div class="card-header py-3">
@@ -13,7 +13,6 @@
                 </div>
                 <div class="card-body">
 
-                    <!-- Usuarios -->
                     <div class="d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
                         <div>
                             <div class="text-xs text-uppercase font-weight-bold text-orange">
@@ -28,7 +27,6 @@
                         </a>
                     </div>
 
-                    <!-- Clientes -->
                     <div class="d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
                         <div>
                             <div class="text-xs text-uppercase font-weight-bold text-orange">
@@ -43,7 +41,6 @@
                         </a>
                     </div>
 
-                    <!-- Proveedores -->
                     <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
                         <div>
                             <div class="text-xs text-uppercase font-weight-bold text-orange">
@@ -62,7 +59,6 @@
             </div>
         </div>
 
-        <!-- Cuentas por Cobrar/Pagar -->
         <div class="col-xl-4 col-lg-6 mb-4">
             <div class="card shadow h-100">
                 <div class="card-header py-3">
@@ -73,7 +69,7 @@
                 
                 <div class="card-body">
                     <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
-                        <canvas id="graficoCaja" style="max-height: 300px;"></canvas>
+                        <canvas id="grafico_circular" style="max-height: 300px;"></canvas>
                     </div>
                 </div>
 
@@ -83,7 +79,6 @@
         </div>
 
 
-        <!-- Acciones Rápidas -->
         <div class="col-xl-4 col-lg-12 mb-4">
             <div class="card shadow h-100">
                 <div class="card-header py-3">
@@ -120,37 +115,3 @@
 
 </div>
 
-
-<!-- CSS Personalizado -->
-<style>
-.border-left-success {
-    border-left: 0.25rem solid #1cc88a !important;
-}
-
-.border-left-danger {
-    border-left: 0.25rem solid #e74a3b !important;
-}
-
-.border-left-info {
-    border-left: 0.25rem solid #36b9cc !important;
-}
-
-.border-left-warning {
-    border-left: 0.25rem solid #f6c23e !important;
-}
-
-.card {
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.chart-pie,
-.chart-bar {
-    position: relative;
-    height: 300px;
-}
-</style>

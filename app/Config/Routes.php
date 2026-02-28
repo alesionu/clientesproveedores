@@ -48,6 +48,7 @@ $routes->post('/transacciones/guardar', 'Transacciones::guardar');
 // Pagos/Cobros
 $routes->get('/transacciones/nuevo-pago', 'Transacciones::nuevo_pago', ['as' => 'transacciones.nuevo_pago']);
 $routes->post('/transacciones/guardar-pago', 'Transacciones::guardar_pago', ['as' => 'transacciones.guardar_pago']);
+$routes->post('/transacciones/obtener_deuda', 'Transacciones::obtener_deuda'); // ← ESTA ES LA QUE FALTA
 
 // Clientes - Detalle/Cuenta Corriente
 $routes->get('/clientes/detalle/(:num)', 'Clientes::detalle/$1', ['as' => 'clientes.detalle']);
@@ -71,3 +72,17 @@ $routes->get('productos/listar-activos', 'Productos::listarActivos');
 
 // Ruta para ver detalle de transacciones
 $routes->get('transacciones/detalle/(:num)', 'Transacciones::ver_detalle/$1');
+
+$routes->get('transacciones/ver_detalle/(:num)', 'Transacciones::ver_detalle/$1');
+
+$routes->post('transacciones/obtener-deuda', 'Transacciones::obtener_deuda');
+
+$routes->get('proveedores/nuevaNotaPedido/(:num)', 'Proveedores::nuevaNotaPedido/$1');
+$routes->post('proveedores/guardarNotaPedido', 'Proveedores::guardarNotaPedido');
+$routes->get('proveedores/descargarNotaPedido/(:num)', 'Proveedores::descargarNotaPedido/$1');
+// Agrega esto en tu archivo Routes.php
+$routes->get('proveedores/verNotaPedido/(:num)', 'Proveedores::verNotaPedido/$1');
+
+
+// Grupo de rutas con prefijo 'public' para compatibilidad
+$routes->post('proveedores/subirListaPrecios', 'Proveedores::subirListaPrecios');

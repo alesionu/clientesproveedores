@@ -4,44 +4,44 @@
             <div class="card-header">
                 <h3 class="card-title">Registrar Pago o Cobro</h3>
             </div>
-            
+
             <form action="<?= base_url('public/transacciones/guardar-pago') ?>" method="post">
                 <div class="card-body">
-                    
-                    <!-- Tipo de Operación: Cobro o Pago -->
+                    <!-- Reemplaza el input hidden por este -->
+                    <input type="hidden" name="comprobantes_ids" id="hidden_comprobantes_ids" value="">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Tipo de Operación</label>
-                                <select class="form-control" name="tipo_operacion" id="selector_operacion" onchange="cambiarOperacion()" required>
+                                <select class="form-control" name="tipo_operacion" id="selector_operacion"
+                                    onchange="cambiarOperacion()" required>
                                     <option value="">-- Seleccionar --</option>
                                     <option value="cobro">Cobro (recibimos dinero de un cliente)</option>
                                     <option value="pago">Pago (pagamos a un proveedor)</option>
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label id="label_entidad">Seleccionar Persona/Empresa</label>
-                                
-                                <!-- Select de Clientes (para COBROS) -->
-                                <select class="form-control" name="id_entidad" id="lista_clientes" style="display:none;" disabled>
+
+                                <select class="form-control" name="id_entidad" id="lista_clientes" style="display:none;"
+                                    disabled onchange="buscarPendientes()">
                                     <option value="">-- Seleccionar Cliente --</option>
                                     <?php foreach($clientes as $c): ?>
-                                        <option value="<?= $c['id'] ?>"><?= $c['razon_social'] ?></option>
+                                    <option value="<?= $c['id'] ?>"><?= $c['razon_social'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
 
-                                <!-- Select de Proveedores (para PAGOS) -->
-                                <select class="form-control" name="id_entidad" id="lista_proveedores" style="display:none;" disabled>
+                                <select class="form-control" name="id_entidad" id="lista_proveedores"
+                                    style="display:none;" disabled onchange="buscarPendientes()">
                                     <option value="">-- Seleccionar Proveedor --</option>
                                     <?php foreach($proveedores as $p): ?>
-                                        <option value="<?= $p['id'] ?>"><?= $p['razon_social'] ?></option>
+                                    <option value="<?= $p['id'] ?>"><?= $p['razon_social'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
 
-                                <!-- Mensaje inicial -->
                                 <div id="mensaje_inicial" class="alert alert-info mb-0">
                                     <i class="fas fa-info-circle"></i> Primero seleccione el tipo de operación
                                 </div>
@@ -49,35 +49,68 @@
                         </div>
                     </div>
 
-                    <div class="dropdown-divider"></div>
+                    <div id="seccion_pendientes" style="display: none;" class="mt-3 mb-3">
+                        <h5 class="text-secondary">Documentos Pendientes</h5>
+                        <div class="table-responsive"
+                            style="max-height: 250px; overflow-y: auto; border: 1px solid #ddd;">
+                            <table class="table table-sm table-hover table-head-fixed">
+                                <thead>
+                                    <tr>
+                                        <th width="40" class="text-center">#</th>
+                                        <th>Fecha</th>
+                                        <th>Tipo</th>
+                                        <th>N° Comprobante</th>
+                                        <th class="text-right">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody_pendientes">
+                                </tbody>
+                            </table>
+                        </div>
+                        <small class="text-muted">* Seleccione los comprobantes que desea cancelar con este
+                            pago.</small>
+                    </div>
 
-                    <!-- Datos del Pago/Cobro -->
+                    <div class="dropdown-divider"></div>
+<!-- Detalles del Pago/Cobro 
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>N° de Recibo/Comprobante</label>
-                                <input type="text" class="form-control" name="numero_comprobante" placeholder="Ej: REC-001234" required>
+                                <label>Forma de pago</label>
+                                <select class="form-control" name="forma_pago" id="forma_pago">
+                                    <option value="efectivo">Efectivo</option>
+                                    <option value="transferencia">Transferencia Bancaria</option>
+                                    <option value="debito">Tarjeta de Débito</option>
+                                    <option value="credito">Tarjeta de Crédito</option>
+                                    <option value="cheque">Cheque</option>
+                                    <option value="ctacte">Cuenta Corriente</option>
+                                    <option value="otro">Otro</option>
+                                </select>
                             </div>
                         </div>
+                        -->
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Fecha de Operación</label>
-                                <input type="date" class="form-control" name="fecha" value="<?= date('Y-m-d') ?>" required>
+                                <input type="date" class="form-control" name="fecha" value="<?= date('Y-m-d') ?>"
+                                    required>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Monto ($)</label>
-                                <input min="0" type="number" step="0.01" class="form-control" name="monto" placeholder="0.00" required>
+                                <label>Monto a Pagar/Cobrar ($)</label>
+                                <input min="0" type="number" step="0.01" class="form-control font-weight-bold"
+                                    style="font-size: 1.2rem;" name="monto" id="input_monto" placeholder="0.00"
+                                    required>
                             </div>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Observaciones</label>
-                        <textarea class="form-control" name="observaciones" rows="3" placeholder="Detalles del pago/cobro, forma de pago, etc..."></textarea>
+                        <textarea class="form-control" name="observaciones" id="input_observaciones" rows="3"
+                            placeholder="Detalles del pago/cobro..."></textarea>
                     </div>
-
 
                 </div>
 
@@ -93,49 +126,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    function cambiarOperacion() {
-        var tipo = document.getElementById('selector_operacion').value;
-        var selectClientes = document.getElementById('lista_clientes');
-        var selectProveedores = document.getElementById('lista_proveedores');
-        var mensajeInicial = document.getElementById('mensaje_inicial');
-        var labelEntidad = document.getElementById('label_entidad');
-
-        // Ocultar mensaje inicial
-        mensajeInicial.style.display = 'none';
-
-        if (tipo === 'cobro') {
-            // Mostrar clientes (cobramos a clientes)
-            selectClientes.style.display = 'block';
-            selectClientes.disabled = false;
-            selectClientes.required = true;
-            
-            selectProveedores.style.display = 'none';
-            selectProveedores.disabled = true;
-            selectProveedores.required = false;
-
-            labelEntidad.innerHTML = '<i class="fas fa-user text-primary"></i> Seleccionar Cliente';
-            
-        } else if (tipo === 'pago') {
-            // Mostrar proveedores (pagamos a proveedores)
-            selectProveedores.style.display = 'block';
-            selectProveedores.disabled = false;
-            selectProveedores.required = true;
-            
-            selectClientes.style.display = 'none';
-            selectClientes.disabled = true;
-            selectClientes.required = false;
-
-            labelEntidad.innerHTML = '<i class="fas fa-truck text-warning"></i> Seleccionar Proveedor';
-            
-        } else {
-            // No seleccionó nada, mostrar mensaje
-            mensajeInicial.style.display = 'block';
-            selectClientes.style.display = 'none';
-            selectClientes.disabled = true;
-            selectProveedores.style.display = 'none';
-            selectProveedores.disabled = true;
-        }
-    }
-</script>
+<script src="<?= base_url('public/asset/dist/js/nuevopago.js') ?>"></script>

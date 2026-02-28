@@ -1,0 +1,31 @@
+
+@media print {
+
+    .no-print,
+    .main-footer,
+    .navbar,
+    .main-sidebar {
+        display: none !important;
+    }
+
+    .content-wrapper,
+    .card {
+        margin-left: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .card-header {
+        display: none !important;
+    }
+
+    body {
+        background-color: white;
+    }
+}
+
+.invoice-box {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}

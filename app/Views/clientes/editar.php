@@ -34,6 +34,29 @@
             </div>
 
             <div class="form-group">
+                <label class="form-label" for="password">Provincia</label>
+                <input class="form-control" type="text" name="provincia" id="password" 
+                       placeholder="ejem: Ezpeleta 1234, CABA"
+                    value="<?php echo $cliente['provincia']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Ciudad</label>
+                <input class="form-control" type="text" name="ciudad" id="password" 
+                       placeholder="ejem: Ezpeleta 1234, CABA"
+                    value="<?php echo $cliente['ciudad']; ?>" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Código Postal</label>
+                <input class="form-control" type="text" name="codigo_postal" id="password" 
+                       placeholder="3153"
+                    value="<?php echo $cliente['codigo_postal']; ?>" required>
+            </div>
+
+            
+
+            <div class="form-group">
                 <label class="form-label" for="password">Dirección</label>
                 <input class="form-control" type="text" name="direccion" id="password" 
                        placeholder="ejem: Ezpeleta 1234, CABA"

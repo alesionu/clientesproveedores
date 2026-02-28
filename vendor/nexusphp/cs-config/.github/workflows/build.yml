@@ -1,0 +1,105 @@
+name: build
+
+permissions:
+  contents: read
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    paths:
+      - '**.php'
+      - .github/workflows/build.yml
+      - composer.json
+      - phpstan.neon.dist
+      - phpunit.xml.dist
+  pull_request:
+    paths:
+      - '**.php'
+      - .github/workflows/build.yml
+      - composer.json
+      - phpstan.neon.dist
+      - phpunit.xml.dist
+
+jobs:
+  main:
+    name: Build [PHP ${{ matrix.php-version }}]
+    runs-on: ubuntu-24.04
+
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - '8.1'
+          - '8.2'
+          - '8.3'
+          - '8.4'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          tools: composer
+          extensions: intl, xdebug
+          coverage: xdebug
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "COMPOSER_CACHE_DIR=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.composer-cache.outputs.COMPOSER_CACHE_DIR }}
+          key: composer-${{ matrix.php-version }}-${{ hashFiles('**/composer.json') }}
+          restore-keys: |
+            composer-${{ matrix.php-version }}
+            composer-
+
+      - name: Install dependencies
+        run: |
+          composer config --global github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
+          composer update --ansi
+
+      - name: Run PHP-CS-Fixer
+        run: composer cs:check
+
+      - name: Run PHPStan Static Analysis Check
+        run: composer phpstan:check
+        env:
+          XDEBUG_MODE: 'off'
+
+      - name: Run Nexus CS Config Test Suite
+        run: composer test:unit
+        env:
+          TACHYCARDIA_MONITOR_GA: enabled
+
+      - name: Run Coveralls
+        run: |
+          composer global require --ansi php-coveralls/php-coveralls
+          php-coveralls --verbose --coverage_clover=build/phpunit/logs/clover.xml --json_path=build/phpunit/logs/coverage.json --exclude-no-stmt --ansi
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_PARALLEL: true
+          COVERALLS_FLAG_NAME: PHP ${{ matrix.php-version }}
+
+  coveralls-finish:
+    name: Coveralls Finished
+    needs: [main]
+    permissions:
+      actions: write
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Upload to Coveralls API
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
